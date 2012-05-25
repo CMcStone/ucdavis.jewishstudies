@@ -20,8 +20,8 @@
 
     <!-- Pull in Plone JS -->
     <after content="/html/head/script" theme="/html/head"/>
-    
-    
+    <copy content='//*[@id="content-core"]' href="../slideshowl" theme='//*[@id="slides-1"]' />
+    <copy content='//*[@id="content-core"]' href="../slideshowr" theme='//*[@id="slides-2"]' />
 
     <!-- Body class -->
     <copy attributes="class" css:theme="body" css:content="body"/>
@@ -54,6 +54,6 @@
     <drop theme='//*[@id="slogan"]' />
     <drop theme='//*[@id="rss"]' />
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
-    
+ 
 
 </rules>

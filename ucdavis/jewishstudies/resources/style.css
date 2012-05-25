@@ -22,17 +22,19 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 #slides 	{
 	margin:0px auto;
-	height:200px;
+	height: 222px;
 	width:1000px;
 	margin-top:0px;
 	margin-bottom:0px;
 	font-size:1.0em;
 }
-.slides-1 {
+#slides-1 {
 	float: left;
+	height:222px;
 }
-.slides-2 {
+#slides-2 {
 	margin-left: 500px;
+	height:222px;
 	
 }
 
@@ -72,7 +74,7 @@ dl.portlet dt,
 div.portletAssignments div.portletHeader,
 div.managePortletsLink,
 a.managePortletsFallback{
-	background-color:#bf9900;
+	background-color:#366;
 	color: #FFF;
 }
 
@@ -92,6 +94,7 @@ div.managePortletsLink a{
 .banner-middle {width:1000px; height:200px; background-color:FFFFFF; bckground:rgb(230,230,230) url(img/bg_head_midle.jpg); overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
 .banner-bottom {width:1000px; height:40px; bckground:rgb(255,255,255) url(img/bg_head_breadcrumbs.jpg) repeat-y;}
 .banner-breadcrumbs {clear:both; width:1000px; padding:1.0em 0 1.5em 0; background:rgb(255,255,255) url(img/bg_head_breadcrumbs.jpg) repeat-y;}
+
 
 body {
 	margin: 0;

@@ -2,7 +2,7 @@
 
 var jq = jQuery;
 jq(document).ready(function(){
-      jq('#slideshowr').cycle({
+      jq('#slides-2').cycle({
           fx: 'fade',
           pause: 0,
           timeout: 7000,
@@ -16,6 +16,6 @@ jq(document).ready(function(){
       slidewidth = 500;
       slideheight = 222;
       
-      jq("#slideshowr .imageCaption").css({"width":slidewidth, "margin-top":slideheight-75});
+      jq("#slides-2 .imageCaption").css({"width":slidewidth, "margin-top":slideheight-75});
   });
 </script>

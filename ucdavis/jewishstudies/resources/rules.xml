@@ -20,9 +20,20 @@
 
     <!-- Pull in Plone JS -->
     <after content="/html/head/script" theme="/html/head"/>
-    <copy content='//*[@id="content-core"]' href="../slideshowl" theme='//*[@id="slides-1"]' />
-    <copy content='//*[@id="content-core"]' href="../slideshowr" theme='//*[@id="slides-2"]' />
-
+     <!--slides -->
+    <drop css:content="#portlets-above"/>
+	<before method="raw" 
+	    css:theme-children="#slides-1"
+	    css:content="#portletwrapper-436f6e74656e7457656c6c506f72746c6574732e41626f7665506f72746c65744d616e61676572310a636f6e746578740a2f6a6577697368737475646965730a6c656674"
+	    />
+	<before method="raw"
+		css:theme-children="#slides-2"
+	    css:content="#portletwrapper-436f6e74656e7457656c6c506f72746c6574732e41626f7665506f72746c65744d616e61676572330a636f6e746578740a2f6a6577697368737475646965730a7269676874"
+		/>
+    <!--replace theme='//*[@id="slides"]' content='//*[@id="portlets-above"]'  /-->
+    <!--copy content='//*[@id="portlets-above"]' theme='//*[@id="slides"]' /--> 
+   
+    
     <!-- Body class -->
     <copy attributes="class" css:theme="body" css:content="body"/>
     
@@ -53,7 +64,7 @@
     
     <drop theme='//*[@id="slogan"]' />
     <drop theme='//*[@id="rss"]' />
-    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+    <theme href="index2.html" css:if-content="#visual-portal-wrapper" />
  
 
 </rules>

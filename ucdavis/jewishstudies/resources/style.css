@@ -30,13 +30,99 @@ Released for free under a Creative Commons Attribution 2.5 License
 }
 #slides-1 {
 	float: left;
+	width:500px;
 	height:222px;
 }
 #slides-2 {
 	margin-left: 500px;
 	height:222px;
-	
 }
+#slideshowr a[href^="http:"], #slideshowr a.link-external {
+  background: none repeat scroll
+    0% 0% transparent;
+  padding: 0pt;
+}
+#slideshowl a[href^="http:"], #slideshowl a.link-external {
+  background: none repeat scroll
+    0% 0% transparent;
+  padding: 0pt;
+}
+#slideshow1 { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow1 > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+#slideshow2 {
+    margin: 50px auto;
+    position: relative;
+    width: 420px;
+    height: 593px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow2 > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.slideshow-caption {
+    width:100%;
+    height:64px;
+    position:absolute;
+    bottom:0;
+    left:0; 
+    color:#fff;
+    background:#000;
+    z-index:500;
+    opacity: .6;
+}
+
+.slideshow-caption .slideshow-caption-container {
+    padding:5px 10px;       
+    z-index:1000;
+}
+
+.slideshow-caption h3 {
+    margin:0;
+    padding:0;  
+    text-transform: capitalize;
+}
+
+.slideshow-caption p {
+    margin:5px 0 0 0;
+    padding:0;
+}
+
+.slideshow-caption-container span {
+    float: right;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+.slideshow-caption-container h3 {
+    color: white;
+}
+
+a.read-more {
+    float: right;
+    color: white !important;
+    font-weight: bold;
+}
+
 
 #logo a#portal-logo {
     margin-top: 157px;

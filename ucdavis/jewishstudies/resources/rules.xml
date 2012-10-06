@@ -19,33 +19,41 @@
     <!--before content='/html/head' theme='/html/head' /-->
 
     <!-- Pull in Plone JS -->
+
     <after content="/html/head/script" theme="/html/head"/>
+   <!--searchbox -->
+    <prepend content='//*[@id="portal-searchbox"]' theme='//*[@id="wrapper"]' />
      <!--slides -->
-    <drop css:content="#portlets-above"/>
+    
+    <drop css:content="#portlets-in-header"/>
 	<before method="raw" 
 	    css:theme-children="#slides-1"
-	    css:content="#portletwrapper-436f6e74656e7457656c6c506f72746c6574732e41626f7665506f72746c65744d616e61676572310a636f6e746578740a2f6a6577697368737475646965730a6c656674"
+	    css:content="#portletwrapper-436f6e74656e7457656c6c506f72746c6574732e496e486561646572506f72746c65744d616e61676572310a636f6e746578740a2f6a6577697368737475646965730a6c65667468"
 	    />
 	<before method="raw"
 		css:theme-children="#slides-2"
-	    css:content="#portletwrapper-436f6e74656e7457656c6c506f72746c6574732e41626f7665506f72746c65744d616e61676572330a636f6e746578740a2f6a6577697368737475646965730a7269676874"
+	    css:content="#portletwrapper-436f6e74656e7457656c6c506f72746c6574732e496e486561646572506f72746c65744d616e61676572330a636f6e746578740a2f6a6577697368737475646965730a726967687468"
 		/>
+		
     <!--replace theme='//*[@id="slides"]' content='//*[@id="portlets-above"]'  /-->
     <!--copy content='//*[@id="portlets-above"]' theme='//*[@id="slides"]' /--> 
-   
+     
     
     <!-- Body class -->
     <copy attributes="class" css:theme="body" css:content="body"/>
+   
     
-    <!-- Pull in global navigation menu-->
-    <copy content='//*[@id="portal-globalnav"]' theme='//*[@id="menu"]' />
+    <!-- Pull in global navigation menu - tried a few different things-->
+    <!--replace theme='//*[@id="header"]' content='//*[@id="portal-globalnav"]' /-->
+    <copy content='//*[@id="portal-globalnav"]' theme='//*[@id="header"]' />
+    <!--replace theme='//*[@id="menu"]' content='//*[@id="portal-globalnav"]' /-->
     <!-- Drop global navigation menu's id-->
-    <drop attributes="id" css:content="#portal-globalnav"/>
+    <!--drop attributes="id" css:content="#portal-globalnav"/-->
     <!-- Pull in personal tools -->
-    <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="logo"]' />
+    <append content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="header"]' />
     
     <!-- Pull in search box -->
-    <prepend content='//*[@id="portal-searchbox"]' theme='//*[@id="logo"]' />
+    
         <!-- Pull in content -->
     <copy content='//*[@id="portal-column-content"]' theme='//*[@id="wrapper-content"]' />
     <!-- Drop global navigation menu's class-->

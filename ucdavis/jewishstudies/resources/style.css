@@ -37,74 +37,44 @@ Released for free under a Creative Commons Attribution 2.5 License
 	margin-left: 500px;
 	height:222px;
 }
-#slideshowr a[href^="http:"], #slideshowr a.link-external {
-  background: none repeat scroll
-    0% 0% transparent;
-  padding: 0pt;
-}
-#slideshowl a[href^="http:"], #slideshowl a.link-external {
-  background: none repeat scroll
-    0% 0% transparent;
-  padding: 0pt;
-}
-#slideshow1 { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-}
 
-#slideshow1 > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
-}
-#slideshow2 {
-    margin: 50px auto;
-    position: relative;
-    width: 420px;
-    height: 593px;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-#slideshow2 > div {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+ul.slideshow {
+	list-style: none;
+	width: 500px;
+	overflow: visible;
+	position: relative;
+	margin-top: -22px;
+	margin-left: -11px;
+	z-index: 50;
+	
 }
 .slideshow-caption {
-    width:100%;
-    height:64px;
+    width:0%;
+    height:0px;
     position:absolute;
     bottom:0;
     left:0; 
-    color:#fff;
-    background:#000;
-    z-index:500;
+    background: transparent;
+    z-index:-50;
     opacity: .6;
 }
 
 .slideshow-caption .slideshow-caption-container {
     padding:5px 10px;       
-    z-index:1000;
+    z-index:-50;
 }
 
 .slideshow-caption h3 {
     margin:0;
     padding:0;  
     text-transform: capitalize;
+    z-index: -50;
 }
 
 .slideshow-caption p {
     margin:5px 0 0 0;
     padding:0;
+    z-index: -50;
 }
 
 .slideshow-caption-container span {
@@ -121,6 +91,7 @@ a.read-more {
     float: right;
     color: white !important;
     font-weight: bold;
+    z-index: -50;
 }
 
 
@@ -129,7 +100,7 @@ a.read-more {
 }
 
 #portal-personaltools a{
-	color:black !important;
+	color:white !important;
 }
 #portal-searchbox {
     margin: 2px 6px 0 0;
@@ -260,17 +231,95 @@ hr { display: none; }
 
 #header {
 	width: 1000px;
-	height: 50px;
+	height: 40px;
 	margin: 0 auto;
 	background: url(images/img03.jpg) no-repeat left top;
 }
 
-/* Menu */
+/* Portal Global-nav*/
+#portal-globalnav {
+clear: both;
+font-size: 80%;
+background: #000000;
+margin: 0 0 0 0;
+color: white;
+}
+#portal-globalnav li a {
+display: inline-block;
+padding: 0.5em 2em 1em 1em;
+background: #000000;
+min-width: 6em;
+white-space: normal;
+border-right: 0.1em solid white;
+color: white;
+}
+
+#portal-globalnav li.selected a {
+background-color: #666666;
+color: white;
+}
+#portal-globalnav .selected a, #portal-globalnav a:hover {
+background: #666666;
+color: white;
+}
+/* for drop down menus */
+#portal-globalnav:hover li:hover > a {
+  background-color:#666666;
+  color: white;
+  }
+portal-globalnav:hover li:hover ul > a {
+  background-color:#666666;
+  color: white;
+  }
+#portal-globalnav ul li a {
+  background-color:#666666;
+  border-top:1px solid #fff;
+  height:auto;
+  padding:0.5em 1.5em 0.5em 1em;
+  vertical-align:top;
+  width:12em;
+  }
+#portal-globalnav li.selected ul li a {
+  background-color:#666666;
+  color: white;
+  }
+#portal-globalnav ul li a.hasChildrens {
+  background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
+  background-position:100% 50%;
+  background-repeat:no-repeat;
+  background-color:#666666;
+  }
+#portal-globalnav ul li a.hasChildrens:hover {
+  background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
+  background-position:100% 50%;
+  background-repeat:no-repeat;
+  background-color:#666666;
+  }
+
+#portal-personaltools {
+float: right;
+background: #A7A6A2;
+position: relative;
+z-index: 3;
+top: 0;
+right: 0;
+padding: 0.25em 0.5em;
+font-size: 80%;
+border-bottom-right-radius: 0.5em;
+border-bottom-left-radius: 0.5em;
+-webkit-border-bottom-right-radius: 0.5em;
+-webkit-border-bottom-left-radius: 0.5em;
+-moz-border-radius-bottomleft: 0.5em;
+-moz-border-radius-bottomright: 0.5em;
+}
+
+/* Menu *
 
 #menu {
 	float: left;
 	width: 1000px;
-	height: 50px;
+	height: 40px;
+	background-color: #000000;
 }
 
 #menu ul {
@@ -289,24 +338,22 @@ hr { display: none; }
 #menu a {
 	display: block;
 	float: left;
-	height: 20px;
 	margin-right: 3px;
 	padding: 15px 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 12px;
-	background-color: 000000;
 	color: #FFFFFF;
 }
 
 #menu a:hover { text-decoration: underline; }
 
 #menu .selected a {
-	height: 20px;
+	height: 10px;
 	background: #666666;
 	color: #FFFFFF;
 }
-
+/
 
 /* Search *
 #search {

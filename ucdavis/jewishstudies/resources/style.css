@@ -1,7 +1,6 @@
 
 /*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
+Design by Chris Thielen, ucdavis
 Released for free under a Creative Commons Attribution 2.5 License
 */
 .header-bar-container {
@@ -131,7 +130,7 @@ dl.portlet dt,
 div.portletAssignments div.portletHeader,
 div.managePortletsLink,
 a.managePortletsFallback{
-	background-color:#366;
+	background-color:#336600;
 	color: #FFF;
 }
 
@@ -255,24 +254,24 @@ color: white;
 }
 
 #portal-globalnav li.selected a {
-background-color: #666666;
+background-color: #336600;
 color: white;
 }
 #portal-globalnav .selected a, #portal-globalnav a:hover {
-background: #666666;
+background: #336600;
 color: white;
 }
 /* for drop down menus */
 #portal-globalnav:hover li:hover > a {
-  background-color:#666666;
+  background-color:#336600;
   color: white;
   }
 portal-globalnav:hover li:hover ul > a {
-  background-color:#666666;
+  background-color:#336600;
   color: white;
   }
 #portal-globalnav ul li a {
-  background-color:#666666;
+  background-color:#336600;
   border-top:1px solid #fff;
   height:auto;
   padding:0.5em 1.5em 0.5em 1em;
@@ -280,20 +279,20 @@ portal-globalnav:hover li:hover ul > a {
   width:12em;
   }
 #portal-globalnav li.selected ul li a {
-  background-color:#666666;
+  background-color:#336600;
   color: white;
   }
 #portal-globalnav ul li a.hasChildrens {
   background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
   background-position:100% 50%;
   background-repeat:no-repeat;
-  background-color:#666666;
+  background-color:#000000;
   }
 #portal-globalnav ul li a.hasChildrens:hover {
   background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
   background-position:100% 50%;
   background-repeat:no-repeat;
-  background-color:#666666;
+  background-color:#336600;
   }
 
 #portal-personaltools {
@@ -311,6 +310,18 @@ border-bottom-left-radius: 0.5em;
 -webkit-border-bottom-left-radius: 0.5em;
 -moz-border-radius-bottomleft: 0.5em;
 -moz-border-radius-bottomright: 0.5em;
+}
+#portal-personaltools dd {
+    background: #A7A6A2;
+    padding-bottom: 0.5em;
+}
+#portal-personaltools dd a {
+    line-height: 2em;
+    padding: 0 0.75em;
+}
+#portal-personaltools dd a:hover {
+    background: #336600;
+    color: White;
 }
 
 /* Menu *

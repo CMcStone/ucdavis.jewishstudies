@@ -16,7 +16,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 	margin-top:0px;
 	margin-bottom:0px;
 	font-size:1.0em;
-	z-index: 1;
+	z-index:5;
 	}
 
 #slides 	{
@@ -80,10 +80,12 @@ ul.slideshow {
     float: right;
     padding-bottom: 5px;
     text-decoration: underline;
+    z-index: -50;
 }
 
 .slideshow-caption-container h3 {
     color: white;
+    z-index: -50;
 }
 
 a.read-more {

@@ -156,8 +156,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color:#CCFF99;
-	font-family: "trebuchet ms",verdana,arial,sans-serif;
-	font-size: 15px;
+	font-family: verdana,arial,sans-serif;
+	font-size: 16px;
 	color: #66665E;
 }
 
@@ -453,7 +453,7 @@ border-bottom-left-radius: 0.5em;
 
 #wrapper-content{
 	float: left;
-	width: 600px;
+	width: 700px;
 }
 
 /* Post */

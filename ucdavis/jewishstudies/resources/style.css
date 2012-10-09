@@ -114,7 +114,7 @@ dl.portlet a:link{
 dl.portlet a:visited,
 a:link,
 a:visited{
-    color: #667DA3;
+    color: #333444;
 }
 #content a:hover, dl.portlet a:hover {
     color: #2F4D6A !important;
@@ -184,7 +184,7 @@ ul, ol { }
 
 blockquote { }
 
-a { color: #000000; }
+a { color: #FFFFFF; }
 
 a:hover { text-decoration: none; }
 
@@ -412,6 +412,8 @@ border-bottom-left-radius: 0.5em;
 	margin: 0 auto;
 	padding: 30px 30px 0px 30px;
 	background: #FFFFFF;
+	border-left: 1px #66665E solid;
+
 	border-bottom: 5px #66665E solid;
 }
 
@@ -458,64 +460,7 @@ border-bottom-left-radius: 0.5em;
 
 /* Post */
 
-.post {
-	margin-bottom: 25px;
-}
 
-.post .title {
-	height: 30px;
-	color: #360;
-}
-
-.post .date {
-}
-
-.post .meta {
-	margin-top: -10px;
-	padding: 2px 30px 2px 0px;
-	border-bottom: 1px #BDBDBB dotted;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	font-size: 10px;
-	color: #66665E;
-}
-
-.post .meta span {
-	display: block;
-	margin-top: -10px;
-}
-
-.post .meta a { }
-
-.post .entry {
-	padding: 10px 0;
-}
-
-.post .links {
-	margin: 0 250px 0 0;
-	padding: 0 0 0 0px;
-}
-
-.post .links .comments {
-}
-
-.post .links .permalink {
-	padding-left: 17px;
-}
-
-/* Sidebar */
-
-#sidebar {
-	float: right;
-	width: 220px;
-}
-
-#sidebar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	line-height: normal;
-}
 
 /*#sidebar li {
 	margin-bottom: 30px;

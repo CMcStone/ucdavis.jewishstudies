@@ -105,19 +105,19 @@ a.read-more {
     margin: 2px 6px 0 0;
 }
 
-/* Light blue */
+/* shades of gray */
 #content a:link,
 dl.portlet a:link{
-    color: #335185;
+    color: #2F4D6A;
 }
 #content a:visited,
 dl.portlet a:visited,
 a:link,
 a:visited{
-    color: #667DA3;
+    color: #2F4D6A;
 }
 #content a:hover, dl.portlet a:hover {
-    color: #2F4D6A !important;
+    color: #667DA3 !important;
 }
 
 
@@ -132,6 +132,9 @@ div.managePortletsLink,
 a.managePortletsFallback{
 	background-color:#336600;
 	color: #FFF;
+}
+dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
+color: white;
 }
 
 div.managePortletsLink a{
